@@ -41,10 +41,4 @@ Primero visita el nodo inicial, luego todos sus vecinos, después los vecinos de
 El algoritmo DFS recorre el árbol profundizando primero en cada rama antes de regresar.
 
 Se implementa normalmente usando recursividad
-        A
-      /   \
-     B     C
-    / \   / \
-   D   E F   G
-  / \ / \ / \ / \
- H  I J K L M N O
+    
