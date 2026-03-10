@@ -29,23 +29,18 @@ tree = {
     'L': [], 'M': [], 'N': [], 'O': []
 }
 
-from collections import deque
+**BFS – Breadth First Search**
 
-def bfs(grafo, nodo, visitados=None):
-    if visitados is None:
-        visitados = set()
+El algoritmo BFS recorre el árbol por niveles, utilizando una cola (queue).
 
-    cola = deque([nodo])
-    visitados.add(nodo)
+Primero visita el nodo inicial, luego todos sus vecinos, después los vecinos de esos nodos, y así sucesivamente.
 
-    while cola:
-        actual = cola.popleft()
-        print(actual)
 
-        for vecino in grafo[actual]:
-            if vecino not in visitados:
-                visitados.add(vecino)
-                cola.append(vecino)
+**DFS – Depth First Search**
+
+El algoritmo DFS recorre el árbol profundizando primero en cada rama antes de regresar.
+
+Se implementa normalmente usando recursividad
         A
       /   \
      B     C
