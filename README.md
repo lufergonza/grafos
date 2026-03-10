@@ -9,7 +9,7 @@ DFS (Depth First Search) – Búsqueda en profundidad
 Los algoritmos se aplican sobre un árbol representado como un diccionario en Python.
 
 
-####**Estructura del árbol**
+**Estructura del árbol**
 
 El árbol se representa utilizando un diccionario donde:
 
@@ -29,6 +29,23 @@ tree = {
     'L': [], 'M': [], 'N': [], 'O': []
 }
 
+from collections import deque
+
+def bfs(grafo, nodo, visitados=None):
+    if visitados is None:
+        visitados = set()
+
+    cola = deque([nodo])
+    visitados.add(nodo)
+
+    while cola:
+        actual = cola.popleft()
+        print(actual)
+
+        for vecino in grafo[actual]:
+            if vecino not in visitados:
+                visitados.add(vecino)
+                cola.append(vecino)
         A
       /   \
      B     C
