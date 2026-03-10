@@ -1,4 +1,4 @@
-#Recorridos en Grafos con BFS y DFS en Python
+**Recorridos en Grafos con BFS y DFS en Python**
 
 Este proyecto implementa dos algoritmos fundamentales de recorrido en grafos:
 
@@ -9,7 +9,7 @@ DFS (Depth First Search) – Búsqueda en profundidad
 Los algoritmos se aplican sobre un árbol representado como un diccionario en Python.
 
 
-#Estructura del árbol
+####**Estructura del árbol**
 
 El árbol se representa utilizando un diccionario donde:
 
